@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.master{
+    display: flex;
+
+    position: relative;
+    width: 1440px;
+    height: 100%;
+    background: #FFFFFF;
+}
+.photo img{
+    padding: 0;
+    position:absolute;
+    left: -90.71px;
+    top: -420px;
+    width: 930.81px;
+    /* height: 130%; */
+    /* height: 1300.68; */
+    background: url(.jpg), #EF419F;
+box-shadow: 20px 4px 35px rgba(0, 0, 0, 0.25);
+transform: rotate(0deg);
+}
+.words{
+    display: block;
+    padding-left: 1000;
+    font-size: 50px;
+    width: 10px;
+    
+}
+.words h3{
+    width: 900px;
+}
+.form{
+    display: flex;
+    padding-top: 320px;
+    
+}
+form .text_field{
+    display: inline;
+    position: relative;
+    border-bottom: 2px solid #EF419F;
+    margin: 30px 0;  
+    
+
+}
+.text_field input{
+    width: 100%;
+    padding: 0 50px;
+    height: 40px;
+    font-size: 25px;
+    border: none;
+    background: none;
+    outline: none;
+}
+/* .master .form{
+    width: 100%;
+    padding: 250px 40px;
+    box-sizing: border-box;
+} */
+.text_field label{
+    position: absolute;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px){
+    .master{
+        width: 100%;
+        display: flex;
+        /* height: -100vh; */
+        /* flex-direction: column; */
+    }
+    .photo img{
+        position: absolute;
+        display: flex;
+        width: 400px;
+        height: 89%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transform: rotate(0deg);
+        top: -90;
+        left: 0;
+    }
+    .words{
+        display: flex;
+        z-index: 1;
+        padding-left: 120;
+        color: white;
+        
+    }
+    .words h3{
+        display: inline;
+        
+    }
+    .form{
+        z-index: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    
+}
