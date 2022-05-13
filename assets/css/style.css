@@ -48,6 +48,7 @@ form .text_field{
 }
 .text_field input{
     width: 100%;
+    
     padding: 0 50px;
     height: 40px;
     font-size: 25px;
@@ -62,18 +63,81 @@ form .text_field{
 } */
 .text_field label{
     position: absolute;
+    top: 50%;
+
+    /* left: 5%; */
     
 }
 
 
 
 
+/* -------------------quiz page------------ */
 
+.start{
+    color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rulesBox{
+    /* color: red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rulesBox{
+    display: none;
+    width:540px;
+    border-radius: 20px;
+    background: #df80b2;
+}
 
+.rulesBox .titleBox{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    /* font-size: 20px; */
 
+}
+.titleBox span{
+    padding: 20px;
+    font-size: 16;
+    font-weight: 200;
+}
+.start button{
+    padding: 20;
+    width: 150px;
+    border: none;
+    outline: none;
+    border-radius: 0 18px 0 18px;
+}
+.rulesBox .ruleList{
+    padding: 12px 35px;
+    width: 100%;
+}
+.list{
+    margin: 5px 0;
+}
 
-
-
+.exitButton{
+    height: 60;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 25px;
+    border-top: 1px solid gray;
+}
+.exitButton button{
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+}
 
 
 
