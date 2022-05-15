@@ -12,7 +12,7 @@ var i=0;
 var score= 0;
 
 
-var questionBank = [
+var questionier = [
     {
         question : 'Whic of the following is a prgramming language',
         option : ['Django','Python','CSS','XML'],
@@ -44,16 +44,16 @@ function displayQuestion(){
     for(var a=0;a<span.length;a++){
         span[a].style.background='none';
     }
-    question.innerHTML= 'Q.'+(i+1)+' '+questionBank[i].question;
-    option0.innerHTML= questionBank[i].option[0];
-    option1.innerHTML= questionBank[i].option[1];
-    option2.innerHTML= questionBank[i].option[2];
-    option3.innerHTML= questionBank[i].option[3];
-    stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
+    question.innerHTML= 'Q.'+(i+1)+' '+questionier[i].question;
+    option0.innerHTML= questionier[i].option[0];
+    option1.innerHTML= questionier[i].option[1];
+    option2.innerHTML= questionier[i].option[2];
+    option3.innerHTML= questionier[i].option[3];
+    stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionier.length;
 }
 
 function calculateScore(e){
-    if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
+    if(e.innerHTML===questionier[i].answer && score<questionier.length)
     {
         score= score+1;
         document.getElementById(e.id).style.background= 'red';
@@ -64,13 +64,13 @@ function calculateScore(e){
     setTimeout(nextQuestion,300);
 }
 function nextQuestion(){
-    if(i<questionBank.length-1)
+    if(i<questionier.length-1)
     {
         i=i+1;
         displayQuestion();
     }
     else{
-        points.innerHTML= score+ '/'+ questionBank.length;
+        points.innerHTML= score+ '/'+ questionier.length;
         quizContainer.style.display= 'none';
         scoreboard.style.display= 'block'
     }
@@ -87,10 +87,10 @@ function checkAnswer(){
     var answers= document.getElementById('answers');
     answerBank.style.display= 'block';
     scoreboard.style.display= 'none';
-    for(var a=0;a<questionBank.length;a++)
+    for(var a=0;a<questionier.length;a++)
     {
         var list= document.createElement('li');
-        list.innerHTML= questionBank[a].answer;
+        list.innerHTML= questionier[a].answer;
         answers.appendChild(list);
     }
 }
