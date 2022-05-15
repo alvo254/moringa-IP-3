@@ -74,3 +74,10 @@ function nextQuestion(){
         scoreboard.style.display= 'block'
     }
 }
+
+next.addEventListener('click',nextQuestion);
+
+//Back to Quiz button event
+function backToQuiz(){
+    location.reload();
+}
