@@ -140,13 +140,129 @@ form .text_field{
 }
 
 
+.quizBox{
+    display: none;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background:#EF419F;
+    border-radius: 20px;
+}
+.quizBox header{
+    height: 70px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
 
+.titleQuiz{
+    font-size: 20px;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    height: 35px;
+    background: lightgray;
+    border: none;
+    border-radius: 15px;
+    padding: 0 8px;
+}
+.timeText{
+    font-weight: 400;
+}
+.timeSec{
+    font-size: 18px;
+    background: darkgray;
+    width:30px;
+    text-align: center;
+    border-radius: 5px;
+}
 
+section{
+    padding: 25px 30px 20px 30px;
+}
+.Questions span{
+    font-size: 25px;
+}
+.optionList{
+    padding: 20px 0;
+    display: block;
+}
+.option{
+    background: aliceblue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.option:last-child{
+    margin-bottom: 0px;
+}
+.option:hover{
+    color: '';
+    background: '';
+    border-color: #df80b2;
+}
 
+.icon{
+    height: 16px;
+    text-align: center;
+    width: 16px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    line-height: 20px;
+    font-size: 15px;
+    pointer-events: none;
+    
+}
+.icon.Tick{
+    color: green;
+    border-color: green;
+    background: #FFFFFF;
+}
+.icon.Cross{
+    color: rgb(248, 62, 62);
+    border-color: rgb(248, 62, 62);
+    background: #d89399;
+}
 
+footer{
+    
+    width: 90%;
+    padding: 0 30px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+}
+.total span {
+    display: flex;
 
+}
+.total span p{
+    font-weight: 500px;
+    padding: 0 5px;
 
+}
+/* .total span p:first-child{
+    padding-left: 0px;
+} */
+
+.nextTo button{
+    width: 20px;
+}
 
 @media screen and (max-width:480px){
     .master{
