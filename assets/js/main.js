@@ -81,3 +81,18 @@ next.addEventListener('click',nextQuestion);
 function backToQuiz(){
     location.reload();
 }
+function checkAnswer(){
+    var answerBank= document.getElementById('answerBank');
+    var answers= document.getElementById('answers');
+    answerBank.style.display= 'block';
+    scoreboard.style.display= 'none';
+    for(var a=0;a<questionBank.length;a++)
+    {
+        var list= document.createElement('li');
+        list.innerHTML= questionBank[a].answer;
+        answers.appendChild(list);
+    }
+}
+
+
+displayQuestion();
