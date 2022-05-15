@@ -1,6 +1,6 @@
 # moringa-IP-3
 
-Link to live site: 
+Link to live site: https://alvo254.github.io/moringa-IP-3/
 
 Deployment: connect to gh-pages 
 
