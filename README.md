@@ -7,7 +7,7 @@ Deployment: connect to gh-pages
 A project README that includes: - project or program name - author name - description of project - project setup instructions - link to live site on GitHub Pages - copyright and license information
 
 
-
+innerHTML is a property of every element. It tells you what is between the starting and ending tags of the element, and it also let you sets the content of the element. property describes an aspect of an object. It is something an object has as opposed to something an object does.
 
 
 document.querySelector('') - is the most neutral way of doing things 

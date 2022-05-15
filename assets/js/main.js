@@ -12,7 +12,7 @@ var i=0;
 var score= 0;
 
 
-var questionBank= [
+var questionBank = [
     {
         question : 'Whic of the following is a prgramming language',
         option : ['Django','Python','CSS','XML'],
@@ -52,11 +52,11 @@ function displayQuestion(){
     stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
 }
 
-function calcScore(e){
+function calculateScore(e){
     if(e.innerHTML===questionBank[i].answer && score<questionBank.length)
     {
         score= score+1;
-        document.getElementById(e.id).style.background= 'limegreen';
+        document.getElementById(e.id).style.background= 'red';
     }
     else{
         document.getElementById(e.id).style.background= 'tomato';
