@@ -93,6 +93,18 @@ function checkAnswer(){
         list.innerHTML= questionBank[a].answer;
         answers.appendChild(list);
     }
+    for(var )
+}
+
+function retMessage{
+    var result = document.getElementById('returnVal')
+    result.textContent = `${c}`
+    if (c <= 3){
+        result.textContent = "You failed ${c} lkajfd"
+    }else{
+        result.textContent = "you passed $c"
+    }
+
 }
 
 
